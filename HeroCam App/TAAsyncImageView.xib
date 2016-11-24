@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TAAsyncImageView" customModule="Tourist_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-s0-jTb" userLabel="Background Image View"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A05-CT-hNJ">
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="P68-MT-bpj">
+                        <frame key="frameInset"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ZX-i7-WGq" userLabel="Downloaded Image View"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Cnu-AC-rC2"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cnu-AC-rC2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0vo-ir-uiu"/>
+                <constraint firstItem="A05-CT-hNJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="33C-Vr-okg"/>
+                <constraint firstItem="bjx-s0-jTb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="6go-MC-f1Z"/>
+                <constraint firstItem="A05-CT-hNJ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="BaM-HB-AgH"/>
+                <constraint firstItem="Cnu-AC-rC2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IyD-Xq-7nM"/>
+                <constraint firstItem="3ZX-i7-WGq" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="L7C-hO-qYf"/>
+                <constraint firstItem="bjx-s0-jTb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TUP-9g-DdP"/>
+                <constraint firstItem="3ZX-i7-WGq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cKf-fl-oUg"/>
+                <constraint firstItem="bjx-s0-jTb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cby-04-58K"/>
+                <constraint firstItem="bjx-s0-jTb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="eKg-Pf-aI3"/>
+                <constraint firstItem="3ZX-i7-WGq" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="eTY-8q-gjj"/>
+                <constraint firstItem="3ZX-i7-WGq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gzI-g9-bCs"/>
+                <constraint firstItem="A05-CT-hNJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="q2l-qj-cGR"/>
+                <constraint firstItem="A05-CT-hNJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="qSI-mT-ty3"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="Cnu-AC-rC2" id="1Hg-fG-5Bu"/>
+                <outlet property="backgroundImageView" destination="bjx-s0-jTb" id="sqM-iz-fwg"/>
+                <outlet property="downloadedImageView" destination="3ZX-i7-WGq" id="w5q-ub-Dwz"/>
+            </connections>
+        </view>
+    </objects>
+</document>

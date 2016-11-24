@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vBM-LN-XO0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.ttf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Main View Controller-->
+        <scene sceneID="Nw5-nO-gb9">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vBM-LN-XO0" customClass="OnboardingMainViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="awn-hZ-TpB"/>
+                        <viewControllerLayoutGuide type="bottom" id="882-lw-3Dr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qu9-Md-PI2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNd-M6-fzp" userLabel="Background View">
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jle-Ok-WK6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jle-Ok-WK6" secondAttribute="height" multiplier="3:1" id="SLX-V9-zPX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="23"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.062745098039215685" green="0.47058823529411764" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonTouchedUpInside:" destination="vBM-LN-XO0" eventType="touchUpInside" id="kX5-Ag-8Fr"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-qx-unI"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iNd-M6-fzp" firstAttribute="centerX" secondItem="Qu9-Md-PI2" secondAttribute="centerX" id="7vA-LD-egm"/>
+                            <constraint firstItem="jle-Ok-WK6" firstAttribute="top" secondItem="fhB-qx-unI" secondAttribute="bottom" constant="25" id="IbC-MO-wlL"/>
+                            <constraint firstItem="iNd-M6-fzp" firstAttribute="centerY" secondItem="Qu9-Md-PI2" secondAttribute="centerY" id="M9h-bE-kU5"/>
+                            <constraint firstItem="fhB-qx-unI" firstAttribute="top" secondItem="awn-hZ-TpB" secondAttribute="bottom" id="Qai-kh-tej"/>
+                            <constraint firstItem="fhB-qx-unI" firstAttribute="centerX" secondItem="Qu9-Md-PI2" secondAttribute="centerX" id="U2J-T2-3yh"/>
+                            <constraint firstItem="iNd-M6-fzp" firstAttribute="height" secondItem="Qu9-Md-PI2" secondAttribute="height" id="Ue6-ia-ZPK"/>
+                            <constraint firstItem="jle-Ok-WK6" firstAttribute="centerX" secondItem="iNd-M6-fzp" secondAttribute="centerX" id="Wzi-U9-MBd"/>
+                            <constraint firstItem="iNd-M6-fzp" firstAttribute="width" secondItem="Qu9-Md-PI2" secondAttribute="width" id="c0e-vC-ptT"/>
+                            <constraint firstItem="fhB-qx-unI" firstAttribute="width" secondItem="Qu9-Md-PI2" secondAttribute="width" id="hmD-OJ-xZX"/>
+                            <constraint firstItem="882-lw-3Dr" firstAttribute="top" secondItem="jle-Ok-WK6" secondAttribute="bottom" constant="21" id="le5-wz-Yhg"/>
+                            <constraint firstItem="jle-Ok-WK6" firstAttribute="top" secondItem="fhB-qx-unI" secondAttribute="bottom" constant="25" id="wDb-bZ-Qhs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IbC-MO-wlL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="fhB-qx-unI" id="EIO-U6-KFG"/>
+                        <outlet property="nextButton" destination="jle-Ok-WK6" id="KQa-pQ-6Ma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hu1-zn-Fi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3938" y="-366"/>
+        </scene>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="yjE-Bh-tDC">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yf4-9j-f2H" customClass="OnboardingPageViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5E-7R-vP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3156" y="-365"/>
+        </scene>
+        <!--Onboarding First View Controller-->
+        <scene sceneID="HIr-8H-lFA">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingFirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cXa-Tb-G7y" customClass="OnboardingFirstViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mim-mY-ZxX"/>
+                        <viewControllerLayoutGuide type="bottom" id="vLI-MV-RRB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ffx-XR-Wru">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb_1" translatesAutoresizingMaskIntoConstraints="NO" id="v8I-WH-1Va"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just take a photo of a landmark that you find interesring" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-7e-r5H">
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6j0-7e-r5H" firstAttribute="top" secondItem="v8I-WH-1Va" secondAttribute="bottom" constant="100" id="4Ny-xG-4lP"/>
+                            <constraint firstItem="v8I-WH-1Va" firstAttribute="top" secondItem="Mim-mY-ZxX" secondAttribute="bottom" constant="85" id="BvP-K3-DdT"/>
+                            <constraint firstItem="6j0-7e-r5H" firstAttribute="centerX" secondItem="Ffx-XR-Wru" secondAttribute="centerX" id="G7Z-p9-Ds6"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="6j0-7e-r5H" secondAttribute="trailing" constant="10" id="H1k-GI-0lY"/>
+                            <constraint firstItem="v8I-WH-1Va" firstAttribute="centerX" secondItem="Ffx-XR-Wru" secondAttribute="centerX" id="ZTq-b0-m4B"/>
+                            <constraint firstItem="6j0-7e-r5H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ffx-XR-Wru" secondAttribute="leadingMargin" constant="10" id="fZD-kX-jS7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0YJ-n0-rWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3156" y="287"/>
+        </scene>
+        <!--Onboarding Second View Controller-->
+        <scene sceneID="zIX-FM-3v3">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingSecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="muG-oE-DNl" customClass="OnboardingSecondViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HMw-y8-tQq"/>
+                        <viewControllerLayoutGuide type="bottom" id="fUn-ef-D4B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vLt-Gs-Yv6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb_2" translatesAutoresizingMaskIntoConstraints="NO" id="b9p-r5-BM0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herocam identifies the landmark with a magic algorithm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAB-rK-15r">
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RAB-rK-15r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vLt-Gs-Yv6" secondAttribute="leadingMargin" constant="10" id="5o6-Yr-NL3"/>
+                            <constraint firstItem="RAB-rK-15r" firstAttribute="centerX" secondItem="vLt-Gs-Yv6" secondAttribute="centerX" id="F79-TQ-EUG"/>
+                            <constraint firstItem="b9p-r5-BM0" firstAttribute="top" secondItem="HMw-y8-tQq" secondAttribute="bottom" constant="85" id="NM8-PS-23H"/>
+                            <constraint firstItem="b9p-r5-BM0" firstAttribute="centerX" secondItem="vLt-Gs-Yv6" secondAttribute="centerX" id="SAx-Qi-7vy"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="RAB-rK-15r" secondAttribute="trailing" constant="10" id="qDN-MH-paQ"/>
+                            <constraint firstItem="RAB-rK-15r" firstAttribute="top" secondItem="b9p-r5-BM0" secondAttribute="bottom" constant="100" id="yam-3O-ukU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FU6-od-uDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3156" y="933"/>
+        </scene>
+        <!--Onboarding Third View Controller-->
+        <scene sceneID="T1k-em-fjb">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingThirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EMa-Aj-6mY" customClass="OnboardingThirdViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Feb-2O-byU"/>
+                        <viewControllerLayoutGuide type="bottom" id="JTx-21-4rI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t7U-b5-q9R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb_3" translatesAutoresizingMaskIntoConstraints="NO" id="Ap3-7M-f20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sit back and learn everything you need about it!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ5-yn-J35">
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ap3-7M-f20" firstAttribute="centerX" secondItem="t7U-b5-q9R" secondAttribute="centerX" id="2eD-DK-djb"/>
+                            <constraint firstItem="Ap3-7M-f20" firstAttribute="top" secondItem="Feb-2O-byU" secondAttribute="bottom" constant="85" id="4Ah-ZI-1PZ"/>
+                            <constraint firstItem="RZ5-yn-J35" firstAttribute="top" secondItem="Ap3-7M-f20" secondAttribute="bottom" constant="90" id="PAm-Lg-kRe"/>
+                            <constraint firstItem="RZ5-yn-J35" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t7U-b5-q9R" secondAttribute="leadingMargin" constant="10" id="XIO-un-5aL"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="RZ5-yn-J35" secondAttribute="trailing" constant="10" id="a42-v0-nUZ"/>
+                            <constraint firstItem="RZ5-yn-J35" firstAttribute="centerX" secondItem="t7U-b5-q9R" secondAttribute="centerX" id="pOt-GZ-274"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0q-Cn-MAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3156" y="1585"/>
+        </scene>
+        <!--Onboarding Fourth View Controller-->
+        <scene sceneID="SDX-PA-DD7">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingFourthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ALy-V2-Awm" customClass="OnboardingFourthViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cyt-9t-EW9"/>
+                        <viewControllerLayoutGuide type="bottom" id="e7A-oB-NWC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DtC-Cn-4DN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb_4" translatesAutoresizingMaskIntoConstraints="NO" id="ArP-U1-EhW"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herocam needs permission to use your camera in order to operate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFi-D3-0Hf">
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-15-71u">
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="23"/>
+                                <state key="normal" title="NOT NOW">
+                                    <color key="titleColor" red="0.062745098040000002" green="0.47058823529999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notNowButtonTouchedUpInside:" destination="ALy-V2-Awm" eventType="touchUpInside" id="rDj-4m-sEf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ArP-U1-EhW" firstAttribute="top" secondItem="cyt-9t-EW9" secondAttribute="bottom" constant="85" id="1Qo-jG-cDM"/>
+                            <constraint firstItem="UFi-D3-0Hf" firstAttribute="centerX" secondItem="DtC-Cn-4DN" secondAttribute="centerX" id="9FU-67-QmN"/>
+                            <constraint firstItem="ArP-U1-EhW" firstAttribute="centerX" secondItem="DtC-Cn-4DN" secondAttribute="centerX" id="FEE-Ks-TPi"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ncy-15-71u" secondAttribute="trailing" constant="10" id="IYu-dc-ISb"/>
+                            <constraint firstItem="UFi-D3-0Hf" firstAttribute="top" secondItem="ArP-U1-EhW" secondAttribute="bottom" constant="80" id="JuY-aw-9hy"/>
+                            <constraint firstItem="Ncy-15-71u" firstAttribute="centerX" secondItem="DtC-Cn-4DN" secondAttribute="centerX" id="XFD-Mf-aUc"/>
+                            <constraint firstItem="UFi-D3-0Hf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DtC-Cn-4DN" secondAttribute="leadingMargin" constant="10" id="c2B-6x-00a"/>
+                            <constraint firstItem="e7A-oB-NWC" firstAttribute="top" secondItem="Ncy-15-71u" secondAttribute="bottom" id="cab-r7-n4l"/>
+                            <constraint firstItem="Ncy-15-71u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DtC-Cn-4DN" secondAttribute="leadingMargin" constant="10" id="ivW-O6-caC"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="UFi-D3-0Hf" secondAttribute="trailing" constant="10" id="zek-GA-rdk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMg-rj-x4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3156" y="2241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onb_1" width="260" height="186"/>
+        <image name="onb_2" width="260" height="186"/>
+        <image name="onb_3" width="241" height="202"/>
+        <image name="onb_4" width="194" height="194"/>
+    </resources>
+</document>

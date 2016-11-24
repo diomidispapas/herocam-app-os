@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TGD-Rp-gLO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help Main View Controller-->
+        <scene sceneID="17H-Fs-cbw">
+            <objects>
+                <viewController storyboardIdentifier="HelpMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TGD-Rp-gLO" customClass="HelpMainViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KJE-as-Sjr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ezz-RV-z0g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O2D-dD-YXq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMK-BT-Lr3">
+                                <connections>
+                                    <segue destination="54E-CJ-aIu" kind="embed" id="EoY-f4-d6Z"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VMK-BT-Lr3" firstAttribute="top" secondItem="KJE-as-Sjr" secondAttribute="bottom" id="21Y-V1-19F"/>
+                            <constraint firstItem="ezz-RV-z0g" firstAttribute="top" secondItem="VMK-BT-Lr3" secondAttribute="bottom" constant="20" id="89n-cT-eJa"/>
+                            <constraint firstItem="VMK-BT-Lr3" firstAttribute="width" secondItem="O2D-dD-YXq" secondAttribute="width" id="Gbi-zY-YWa"/>
+                            <constraint firstItem="VMK-BT-Lr3" firstAttribute="centerX" secondItem="O2D-dD-YXq" secondAttribute="centerX" id="R17-fq-Aai"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="slH-Fg-FvW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FH6-tc-vuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="1680"/>
+        </scene>
+        <!--Help Page View Controller-->
+        <scene sceneID="f8y-77-8wc">
+            <objects>
+                <pageViewController storyboardIdentifier="HelpPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="54E-CJ-aIu" customClass="HelpPageViewController" customModule="Tourist_App" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlg-NX-DFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="1679"/>
+        </scene>
+    </scenes>
+</document>

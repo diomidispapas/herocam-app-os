@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TACameraOverlayView" customModule="Tourist_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obD-R6-beA">
+                    <subviews>
+                        <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJG-dM-qLU">
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IHE-IT-uJz">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <color key="backgroundColor" red="0.27450980392156865" green="0.79607843137254897" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                            <blurEffect style="extraLight"/>
+                        </visualEffectView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_overlay" translatesAutoresizingMaskIntoConstraints="NO" id="Fqf-bc-p70"/>
+                    </subviews>
+                    <color key="backgroundColor" red="0.27450980392156865" green="0.79607843137254897" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="eJG-dM-qLU" firstAttribute="centerX" secondItem="obD-R6-beA" secondAttribute="centerX" id="8V1-S5-Vhn"/>
+                        <constraint firstItem="Fqf-bc-p70" firstAttribute="width" secondItem="obD-R6-beA" secondAttribute="width" id="GyF-ER-6iI"/>
+                        <constraint firstItem="eJG-dM-qLU" firstAttribute="height" secondItem="obD-R6-beA" secondAttribute="height" id="IDr-hg-RuA"/>
+                        <constraint firstItem="eJG-dM-qLU" firstAttribute="centerY" secondItem="obD-R6-beA" secondAttribute="centerY" id="K8f-Ci-27S"/>
+                        <constraint firstItem="Fqf-bc-p70" firstAttribute="centerX" secondItem="obD-R6-beA" secondAttribute="centerX" id="Q8r-f2-lTI"/>
+                        <constraint firstItem="Fqf-bc-p70" firstAttribute="top" secondItem="obD-R6-beA" secondAttribute="top" constant="10" id="sa6-Tt-pWF"/>
+                        <constraint firstItem="eJG-dM-qLU" firstAttribute="width" secondItem="obD-R6-beA" secondAttribute="width" id="yLd-6f-9vh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cU-Xo-NbR">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9cU-Xo-NbR" secondAttribute="height" multiplier="3.1:4" id="fYh-Tn-ttc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" alpha="0.88" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KX-5K-NVq" userLabel="Button Title">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2KX-5K-NVq" secondAttribute="height" multiplier="105:104" id="0TJ-ps-XXg"/>
+                    </constraints>
+                    <state key="normal" image="capture_btn">
+                        <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="takePhotoButtonTouchedUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="uA8-NK-UTi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9cU-Xo-NbR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7LG-fR-NCc"/>
+                <constraint firstAttribute="trailing" secondItem="9cU-Xo-NbR" secondAttribute="trailing" id="FSW-Qw-zsS"/>
+                <constraint firstItem="obD-R6-beA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="LEX-YU-M0Z"/>
+                <constraint firstItem="9cU-Xo-NbR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QB7-x8-a7K"/>
+                <constraint firstItem="2KX-5K-NVq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="S7W-81-aeH"/>
+                <constraint firstAttribute="bottom" secondItem="obD-R6-beA" secondAttribute="bottom" id="a0a-pj-XKI"/>
+                <constraint firstItem="2KX-5K-NVq" firstAttribute="centerY" secondItem="Fqf-bc-p70" secondAttribute="centerY" constant="-5" id="fVe-Yq-6rI"/>
+                <constraint firstItem="obD-R6-beA" firstAttribute="top" secondItem="9cU-Xo-NbR" secondAttribute="bottom" id="gvw-Se-8G8"/>
+                <constraint firstItem="Fqf-bc-p70" firstAttribute="height" secondItem="9cU-Xo-NbR" secondAttribute="height" multiplier="0.2" id="puO-XA-krG"/>
+                <constraint firstItem="obD-R6-beA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zjk-fz-tPj"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            <connections>
+                <outlet property="bottomView" destination="obD-R6-beA" id="Yzg-AD-HcU"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_overlay" width="320" height="88"/>
+        <image name="capture_btn" width="114" height="114"/>
+    </resources>
+</document>

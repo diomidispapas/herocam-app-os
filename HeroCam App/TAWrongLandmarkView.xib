@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.ttf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRL-0f-R1g" userLabel="Wrong Landmark View" customClass="TAWrongLandmarkView" customModule="Tourist_App" customModuleProvider="target">
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Gk-Kz-CHQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="255" id="fO3-0j-jD0"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwq-Nq-Ldn" userLabel="Description View">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-nd-l7u">
+                            <color key="backgroundColor" red="0.27450980390000002" green="0.79607843140000001" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Does not seem quite right?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so0-1K-q9h">
+                            <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPq-AN-5vR">
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                            <state key="normal" title="Ask your friends for help">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="askYourFriendsButtonTouchedUpInside:" destination="bRL-0f-R1g" eventType="touchUpInside" id="g5x-tH-myj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehm-Ix-KP9">
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                            <state key="normal" title="Give us a better answer">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="giveUsABetterAnswerButtonTouchedUpInside:" destination="bRL-0f-R1g" eventType="touchUpInside" id="Puy-bq-qag"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Iz-Hb-lhV" userLabel="Share Button">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="0Iz-Hb-lhV" secondAttribute="height" multiplier="51:29" id="gVo-4U-gaC"/>
+                            </constraints>
+                            <state key="normal" image="Share"/>
+                            <connections>
+                                <action selector="askYourFriendsButtonTouchedUpInside:" destination="bRL-0f-R1g" eventType="touchUpInside" id="0oG-TO-oh8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6S-is-5K0" userLabel="Pencil Button">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="h6S-is-5K0" secondAttribute="height" multiplier="11:9" id="Ivv-Ci-Wxe"/>
+                            </constraints>
+                            <state key="normal" image="Pencil"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Ivv-Ci-Wxe"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="giveUsABetterAnswerButtonTouchedUpInside:" destination="bRL-0f-R1g" eventType="touchUpInside" id="RZc-LC-FN7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="h6S-is-5K0" firstAttribute="centerX" secondItem="0Iz-Hb-lhV" secondAttribute="centerX" id="8uC-mc-qY6"/>
+                        <constraint firstItem="h6S-is-5K0" firstAttribute="centerY" secondItem="ehm-Ix-KP9" secondAttribute="centerY" id="9b8-cj-ato"/>
+                        <constraint firstItem="M9u-nd-l7u" firstAttribute="width" secondItem="xwq-Nq-Ldn" secondAttribute="width" id="Eor-bu-m79"/>
+                        <constraint firstItem="so0-1K-q9h" firstAttribute="top" secondItem="xwq-Nq-Ldn" secondAttribute="top" constant="8" id="HG8-gp-OZg"/>
+                        <constraint firstItem="ehm-Ix-KP9" firstAttribute="top" secondItem="yPq-AN-5vR" secondAttribute="bottom" constant="8" id="JIF-PW-84x"/>
+                        <constraint firstItem="h6S-is-5K0" firstAttribute="width" secondItem="0Iz-Hb-lhV" secondAttribute="width" id="LYe-Ir-93Y"/>
+                        <constraint firstItem="M9u-nd-l7u" firstAttribute="centerX" secondItem="xwq-Nq-Ldn" secondAttribute="centerX" id="LeE-bR-RTO"/>
+                        <constraint firstItem="ehm-Ix-KP9" firstAttribute="leading" secondItem="yPq-AN-5vR" secondAttribute="leading" id="NWw-7X-X5O"/>
+                        <constraint firstAttribute="trailing" secondItem="0Iz-Hb-lhV" secondAttribute="trailing" id="Nlp-La-3fu"/>
+                        <constraint firstAttribute="height" constant="139" id="OLU-l4-gm4"/>
+                        <constraint firstAttribute="trailing" secondItem="so0-1K-q9h" secondAttribute="trailing" constant="8" id="OWk-u8-UqS"/>
+                        <constraint firstItem="h6S-is-5K0" firstAttribute="height" secondItem="0Iz-Hb-lhV" secondAttribute="height" id="Q5Q-Ew-63M"/>
+                        <constraint firstItem="yPq-AN-5vR" firstAttribute="top" secondItem="so0-1K-q9h" secondAttribute="bottom" constant="16.5" id="W89-tj-pWr"/>
+                        <constraint firstItem="so0-1K-q9h" firstAttribute="leading" secondItem="xwq-Nq-Ldn" secondAttribute="leading" constant="8" id="ayO-f6-4EU"/>
+                        <constraint firstItem="M9u-nd-l7u" firstAttribute="centerY" secondItem="xwq-Nq-Ldn" secondAttribute="centerY" id="bfq-Dw-TCh"/>
+                        <constraint firstItem="yPq-AN-5vR" firstAttribute="leading" secondItem="xwq-Nq-Ldn" secondAttribute="leading" constant="10" id="gbc-G2-ST4"/>
+                        <constraint firstItem="M9u-nd-l7u" firstAttribute="height" secondItem="xwq-Nq-Ldn" secondAttribute="height" id="iJJ-tW-caM"/>
+                        <constraint firstItem="0Iz-Hb-lhV" firstAttribute="centerY" secondItem="yPq-AN-5vR" secondAttribute="centerY" id="zBj-eu-5Fa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xwq-Nq-Ldn" secondAttribute="trailing" id="0hL-Y8-ISX"/>
+                <constraint firstItem="2Gk-Kz-CHQ" firstAttribute="top" secondItem="bRL-0f-R1g" secondAttribute="top" id="1GQ-65-Ozt"/>
+                <constraint firstItem="xwq-Nq-Ldn" firstAttribute="top" secondItem="2Gk-Kz-CHQ" secondAttribute="bottom" id="B0r-pa-Iik"/>
+                <constraint firstAttribute="trailing" secondItem="2Gk-Kz-CHQ" secondAttribute="trailing" id="adN-RE-jaC"/>
+                <constraint firstAttribute="bottom" secondItem="xwq-Nq-Ldn" secondAttribute="bottom" id="sXg-fR-qKg"/>
+                <constraint firstItem="xwq-Nq-Ldn" firstAttribute="leading" secondItem="bRL-0f-R1g" secondAttribute="leading" id="w9c-lU-WwF"/>
+                <constraint firstItem="2Gk-Kz-CHQ" firstAttribute="leading" secondItem="bRL-0f-R1g" secondAttribute="leading" id="ygY-zu-aoY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="2Gk-Kz-CHQ" id="JVa-fS-XDM"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="-846"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Pencil" width="33" height="27"/>
+        <image name="Share" width="21" height="29"/>
+    </resources>
+</document>
