@@ -18,7 +18,7 @@ In order to retrieve results using the [HeroCam app](https://herocamapp.github.i
 
 ## 📱 On the App Store
 
-You can find the client-app available on the [ App Store](https://itunes.apple.com/us/app/herocam/id1078111204?ls=1&mt=8). 
+The app is available on the [ App Store](https://itunes.apple.com/us/app/herocam/id1078111204?ls=1&mt=8). 
 
 ![Screen Shot 2016-11-24 at 1.39.14 PM](./Screenshots/Screen Shot 2016-11-24 at 1.39.14 PM.png)
 
