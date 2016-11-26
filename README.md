@@ -1,6 +1,6 @@
 # Herocam App ![swift 3](https://camo.githubusercontent.com/93de6573350b91e48ab570a4fe710e4e8baa38b8/687474703a2f2f696d672e736869656c64732e696f2f62616467652f73776966742d332e302d627269676874677265656e2e737667)
 
-An iOS application that recognizes the landmarks in the photos you take and reviels to you all the hidden story behind them. HeroCam App works with the [HeroCam-service-os](https://github.com/diomidispapas/herocam-service-os). HeroCam is an example of Protocol oriented - Value type programming in Swift. [HeroCam app](https://herocamapp.github.io) is available on the [App Store](https://itunes.apple.com/us/app/herocam/id1078111204?ls=1&mt=8). 
+An iOS application that recognizes the landmarks in the photos you take and reviels to you all the hidden story behind them. HeroCam App works with the [HeroCam service](https://github.com/diomidispapas/herocam-service-os). HeroCam is an example of Protocol oriented - Value type programming in Swift. [HeroCam app](https://herocamapp.github.io) is available on the [App Store](https://itunes.apple.com/us/app/herocam/id1078111204?ls=1&mt=8). 
 
 
 
